@@ -1,0 +1,12 @@
+.nav {
+    background-color: rgb(56, 63, 30) !important;
+}
+
+.listLinks a {
+    color: white !important;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
