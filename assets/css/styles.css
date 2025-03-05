@@ -131,3 +131,41 @@ body {
         padding: 20px;
     }
 }
+
+#quote {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quotation {
+    font-size: 180px;
+    height: 125px;
+    color: #ff9f10;
+}
+
+.quoteH3 {
+    text-align: center;
+    color: #004225;
+    text-transform: uppercase !important;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: Bebas Neue, sans-serif;
+}
+
+/* .quoteH3 h3 {
+    display: block;
+} */
+
+.pCite {
+    text-align: center;
+    color: #0c0c0c;
+    font-size: 30px;
+    font-family: Bebas Neue, sans-serif;
+    letter-spacing: 1px;
+}
+
+.quotationEnd {
+    display: block;
+    text-align: end;
+}
