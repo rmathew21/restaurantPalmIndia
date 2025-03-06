@@ -15,6 +15,10 @@ body {
     height: auto;
 }
 
+.carousel-item {
+    transition: transform 2.5s ease-in-out
+}
+
 .carouselPic {
    width: 100%;
    max-height: 80vh;
