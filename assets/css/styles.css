@@ -323,3 +323,72 @@ body {
     color: #444343;
     margin: 0;
 }
+
+#footer {
+    padding: 5rem 10rem;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(56, 63, 30);
+}
+
+.logo {
+    width: 33%;
+    display: grid;
+    gap: 20px;
+}
+
+.logo img {
+    width: 90px;
+    margin: auto;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.socials a img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+    margin: auto;
+}
+
+.contact {
+    width: 33%;
+    display: grid;
+    gap: 20px;
+}
+
+.contact a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact a img {
+    width: 2rem;
+}
+
+.closingLiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-top: 1px solid gray;
+    background-color: rgb(56, 63, 30);
+}
+.closingLiner p {
+    color: #fff;
+    margin: 0;
+}
+
+.closingLiner a {
+    color: #fff;
+    margin: 0;
+}
