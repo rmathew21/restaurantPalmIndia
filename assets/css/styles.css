@@ -370,9 +370,9 @@ body {
     gap: 20px;
 }
 
-.contact a img {
+/* .contact a img {
     width: 2rem;
-}
+} */
 
 .closingLiner {
     display: flex;
@@ -392,3 +392,4 @@ body {
     color: #fff;
     margin: 0;
 }
+
