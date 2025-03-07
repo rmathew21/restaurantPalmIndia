@@ -468,32 +468,50 @@ html, body {
         width: 100%;
     }
     .item {
-        width: 95%;
-        max-width: 450px;
+        width: 90%;
+        max-width: 500px;
         padding: 15px;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 1px 4px #00000029;
     }
     .img {
-        width: 30%;
+        width: 100%;
+        padding: 10px;
     }
     .img img {
-        height: 8rem;
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
     }
 
     .itemName {
-        width: 65%;
-        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
     .itemName div {
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
     }
-    .itemName h3, .itemName span {
+    .itemName h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 5px 0;
+    }
+    .itemName span {
         font-size: 18px;
+        font-weight: 600;
+        color: #000;
     }
 
 }
