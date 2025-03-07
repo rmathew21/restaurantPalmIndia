@@ -552,6 +552,32 @@ html, body {
         font-weight: 600;
         color: #000;
     }
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+        gap: 30px;
+    }
+    .logo {
+        width: 100%;
+    }
+    .socials {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact {
+        width: 100%;
+        text-align: center;
+    }
+    .contact a {
+        justify-content: center;
+    }
+    .closingLiner {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 
 }
 
