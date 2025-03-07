@@ -61,7 +61,7 @@ body {
     /* margin-bottom: 10px; */
     /* border: 2px solid green; */
     
-    padding: 5rem;
+    padding: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -191,6 +191,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2.5rem;
+    display: grid;
+    margin: auto;
     /* border: 2px solid red; */
     /* display: grid;
     margin: auto; */
@@ -209,7 +211,7 @@ body {
     font-size: 40px;
     letter-spacing: 1px;
     font-family: Bebas Neue, sans-serif;
-    margin: 20px
+    /* margin: 20px */
 }
 
 /* .quoteH3 h3 {
@@ -225,10 +227,14 @@ body {
 }
 
 .quotationEnd {
-    display: block;
+    /* display: block;
     text-align: end;
     margin: 0;
-    padding: 0;
+    padding: 0; */
+    color: #ff9f10;
+    font-size: 180px;
+    height: 125px;
+    text-align: end;
 }
 
 #services {
@@ -374,7 +380,7 @@ body {
 }
 
 #footer {
-    padding: 5rem 10rem;
+    padding: 2.5rem;
     display: flex;
     gap: 20px;
     justify-content: space-between;
