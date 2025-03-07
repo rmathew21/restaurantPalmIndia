@@ -468,26 +468,33 @@ html, body {
         width: 100%;
     }
     .item {
-        flex-basis: 100%;
-        max-width: 100%;
+        width: 95%;
+        max-width: 450px;
+        padding: 15px;
+        flex-wrap: wrap;
         justify-content: space-between;
-        width: 90%;
+        
     }
     .img {
-        width: 25%;
+        width: 30%;
     }
     .img img {
-        height: 6rem;
+        height: 8rem;
     }
 
     .itemName {
-        width: 80%;
-        text-align: center;
+        width: 65%;
+        text-align: left;
     }
-    /* .itemName div {
+    .itemName div {
+        display: flex;
         justify-content: space-between;
-    } */
-
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .itemName h3, .itemName span {
+        font-size: 18px;
+    }
 
 }
 
