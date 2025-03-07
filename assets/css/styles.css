@@ -175,6 +175,9 @@ html, body {
     font-size: 180px;
     height: 125px;
     text-align: end;
+    position: relative;
+    top: -30px;
+    margin-top: -80px;
 }
 
 #services {
