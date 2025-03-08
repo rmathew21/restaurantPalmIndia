@@ -643,6 +643,9 @@ html, body {
 }
 
 /* Menu page */
+.main {
+    background-color: rgb(255, 159, 16);
+}
 .menu {
     width: 100%;
     max-width: 100vw;
@@ -668,4 +671,39 @@ html, body {
     color: #fff;
     font-size: 70px;
     font-family: "Bebas Neue", sans-serif;
+}
+
+.mainMenu {
+    padding-top: 35px;
+}
+
+.menuOptions {
+    margin: 20px 110px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #263a00;
+    padding: 10px;
+    justify-content: center;
+}
+
+.menuBtns {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.all {
+    margin: 10px;
+    background: #0000;
+    border: 1px solid;
+}
+.highlight {
+    background-color: #263a00;
+    color: #fff;
+}
+
+.divider {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
 }
