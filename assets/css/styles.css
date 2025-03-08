@@ -316,13 +316,13 @@ html, body {
     background-color: rgb(56, 63, 30);
 }
 
-.logo {
+.footerLogo {
     width: 33%;
     display: grid;
     gap: 20px;
 }
 
-.logo img {
+.footerLogo img {
     width: 90px;
     margin: auto;
 }
@@ -559,7 +559,7 @@ html, body {
         padding: 2rem 1rem;
         gap: 30px;
     }
-    .logo {
+    .footerLogo {
         width: 100%;
     }
     .socials {
