@@ -707,3 +707,89 @@ html, body {
     margin-top: auto;
     margin-bottom: auto;
 }
+.exp {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.menuSections {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* #appetizers {
+
+} */
+
+.sectionText {
+    display: flex;
+    justify-content: space-between;
+}
+.sectionText h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.png {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.openCloseBtn {
+    display: flex;
+}
+
+.openClose {
+    padding: 0 17px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: initial;
+}
+
+.inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.main-container {
+    flex: 0 0 23%;
+    max-width: 23%;
+    text-align: center;
+    margin: 25px 10px;
+}
+
+.logo {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.content h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+}
+
+.content p {
+    color: #444343;
+    margin-bottom: 20px;
+}
+
+.content p span {
+    font-size: 20px;
+    font-weight: 600;
+}
