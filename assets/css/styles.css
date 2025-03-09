@@ -793,3 +793,8 @@ html, body {
     font-size: 20px;
     font-weight: 600;
 }
+.comboP {
+    color: #444343;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
