@@ -45,6 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".menuBtns button");
     const menuSections = document.querySelectorAll(".menuSections > div");
 
+    document.querySelectorAll('.inner-wrapper').forEach(wrapper => {
+        wrapper.style.maxHeight = wrapper.scrollHeight + 'px';
+    });
+    
     buttons.forEach(button => {
         button.addEventListener('click', function () {
             const targetId = button.getAttribute('data-target').trim();
