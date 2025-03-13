@@ -749,10 +749,18 @@ html, body {
     background-color: initial;
 }
 
+.inner-wrapper {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
 .inner-container {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0;
+    /* overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out; */
 }
 
 .main-container {

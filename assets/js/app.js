@@ -70,4 +70,22 @@ document.addEventListener("DOMContentLoaded", function () {
             button.classList.add('highlight');
         });
     });
+
+    // Open/close functionality for each section
+    document.querySelectorAll('.openClose').forEach(button => {
+        button.addEventListener('click', function () {
+            const section = this.closest('div[id]');
+            const wrapper = section.querySelector(".inner-wrapper");
+
+            // const innerContainer = section.querySelector('.inner-container');
+
+            if (wrapper.style.maxHeight === '0px' || !wrapper.style.maxHeight) {
+                wrapper.style.maxHeight = wrapper.scrollHeight + "px";
+                this.textContent = "-"; // Change button text to collapse
+            } else {
+                wrapper.style.maxHeight = '0px';
+                this.textContent = "+";
+            }
+        });
+    });
 });
