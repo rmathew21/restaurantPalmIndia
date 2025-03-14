@@ -567,11 +567,25 @@ html, body {
         flex-wrap: wrap;
     }
     .contact {
-        width: 100%;
-        text-align: center;
+        /* width: 100%;
+        text-align: center; */
+        width: 33%;
+        display: grid;
+        gap: 20px;
     }
     .contact a {
-        justify-content: center;
+        /* justify-content: center; */
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-decoration: none;
+    }
+    
+    .contact svg {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
     }
     .closingLiner {
         flex-direction: column;
@@ -920,8 +934,8 @@ html, body {
 }
 
 .bi {
-    width: 4rem;
-    margin: auto;
+    
+    margin: 0;
 }
 
 .mapH4 {
