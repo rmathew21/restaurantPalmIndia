@@ -883,3 +883,51 @@ html, body {
     margin: auto;
     cursor: default !important;
 }
+
+.contactUs {
+    margin-top: 55px;
+    font-family: 'Inter', sans-serif;
+
+    padding: 5rem;
+    display: grid;
+    gap: 20px;
+}
+
+.contactUs h3 {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.map {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.map a {
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    width: 33%;
+    color: #000;
+    display: grid;
+}
+
+.bi {
+    width: 4rem;
+    margin: auto;
+}
+
+.mapH4 {
+    color: #1e1e1e;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
