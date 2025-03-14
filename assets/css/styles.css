@@ -890,6 +890,7 @@ html, body {
     max-width: 60%;
     box-shadow: 0 3px 9px #c8d1e240;
     padding: 10rem;
+    margin-top: 100px;
 }
 
 #form h3 {
