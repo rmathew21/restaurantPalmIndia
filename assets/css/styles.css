@@ -825,6 +825,63 @@ html, body {
     scroll-margin-top: 120px;
 }
 
+@media screen and (max-width: 1024px) {
+    .mainText h3 {
+        font-size: 50px;
+    }
+    .menuOptions {
+        margin: 10px;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .menuBtns {
+        flex: 1 1 45%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mainText h3 {
+        font-size: 40px;
+    }
+    .menuOptions {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .menuBtns {
+        flex: 1 1 100%;
+    }
+    .menuSections {
+        padding: 10px;
+    }
+    .main-container {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .mainText h3 {
+        font-size: 30px;
+    }
+    .menuOptions {
+        margin: 5px;
+        padding: 5px;
+    }
+    .menuBtns {
+        flex: 1 1 100%;
+    }
+    .main-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .content h3 {
+        font-size: 18px;
+    }
+    .content p span {
+        font-size: 16px;
+    }
+}
+
 /* Contact Us page */
 #form {
     display: grid;
