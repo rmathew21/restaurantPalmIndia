@@ -79,7 +79,6 @@ html, body {
 }
 
 
-
 /* Left Side (images) */
 .aboutImages {
     display: flex;
@@ -200,28 +199,98 @@ html, body {
 .serviceOfferings {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    /* grid-template-rows: auto auto; */
     gap: 20px;
     width: 50%;
     text-align: center;
-    height: auto;
+    /* height: auto; */
     margin: auto;
 }
 
 .offering:nth-child(1) {
     grid-column: 1 /2 ;
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 2; */
 }
 
 .offering:nth-child(2) {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 2; */
 }
 
 .offering:nth-child(3) {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    /* grid-row: 2 / 3; */
     justify-self: center;
+}
+
+/* Base card */
+.offering {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px #00000029;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offering img {
+    width: 50px;
+    height: 50px;
+}
+.offering h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Make anchors look like cards */
+a.offering,
+a.offering:link,
+a.offering:visited {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
+
+.card-link {
+    transition: transform .2s, box-shadow .2s;
+}
+@media (hover: hover) {
+    .card-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 3px 6px #00000033;
+    }
+    .card-link:focus-visible {
+        outline: 2px solid #333;
+        outline-offset: 2px;
+    }
+    
+    /* Disabled card  */
+    .is-disabled {
+        pointer-events: none;
+        opacity: .55;
+        filter: grayscale(10%);
+        cursor: none;
+    }
+
+    /* Hotline CTA */
+    .offering.hotline-button {
+        background: #ff4d4d;
+        color: #fff;
+        box-shadow: 0 3px 6px #00000033;
+        transition: background .3s, transform .2s;
+    }
+    .offering.hotline-button h3,
+    .offering.hotline-button p {
+        color: #fff;
+    }
+    @media (hover: hover) {
+        .offering.hotline-button:hover {
+            background: #e60000;
+            transform: translateY(-2px);
+        }
+    }
 }
 
 #favorites {
@@ -441,6 +510,7 @@ html, body {
         text-align: center;
         padding: 20px;
     }
+
     #services {
         flex-direction: column;
         align-items: center;
@@ -451,7 +521,6 @@ html, body {
 
     .serviceImgs {
         width: 100%;
-        flex-direction: column;
         align-items: center;
         gap: 15px;
     }
@@ -460,16 +529,17 @@ html, body {
         max-width: 300px;
     }
     .serviceOfferings {
-        display: grid;
+        /* display: grid; */
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto autoc;
+        /* grid-template-rows: auto auto; */
         gap: 10px;
         width: 90%;
         max-width: 400px;
         margin: auto;
     }
+    /* Base card */
     .offering {
-        background: white;
+        background: #fff;
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 1px 4px #00000029;
@@ -477,29 +547,80 @@ html, body {
         flex-direction: column;
         align-items: center;
     }
+    
     .offering img {
         width: 50px;
         height: 50px;
     }
+    
     .offering h3 {
         font-size: 18px;
         font-weight: 600;
         margin: 10px 0;
     }
-    .offering:nth-child(1) {
+
+    /* Make anchors look like cards */
+    a.offering {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+    }
+    
+    .card-link {
+        transition: transform .2s, box-shadow .2s;
+    }
+    @media (hover: hover) {
+        .card-link:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 3px 6px #00000033; 
+        }
+    }
+    .card-link:focus-visible { 
+        outline: 2px solid #333; 
+        outline-offset: 2px; 
+    }
+
+    .is-disabled {
+        pointer-events: none;
+        opacity: .55;
+        filter: grayscale(10%);
+        cursor: not-allowed;
+    }
+
+    .offering.hotline-button {
+        background: #ff4d4d;
+        color: #fff;
+        box-shadow: 0 3px 6px #00000033;
+        transition: background 0.3s, transform 0.2s;
+        text-decoration: none;
+        /* cursor: pointer; */
+    }
+    .offering.hotline-button h3,
+    .offering.hotline-button p {
+        color: #fff;
+    }
+    @media (hover: hover) {
+        .offering.hotline-button:hover { 
+            background: #e60000; 
+            transform: translateY(-2px); 
+        }
+    }
+
+    
+    .serviceOfferings > :nth-child(1) {
         grid-column: 1 / 2;
-        grid-row: 1 / 2;
     }
-    .offering:nth-child(2) {
+    .serviceOfferings > :nth-child(2) {
         grid-column: 2 / 3;
-        grid-row: 1 / 2;
     }
-    .offering:nth-child(3) {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
+   
+
+    .span-two {
+        grid-column: 1 / -1;
         justify-self: center;
         width: 80%;
     }
+    
 
     .favoritesContainer {
         flex-direction: column;
@@ -607,7 +728,7 @@ html, body {
         align-items: center;
         text-align: center;
         padding: 20px;
-        gap: 20px;
+        gap: 15px;
     }
     .serviceImgs {
         width: 100%;
@@ -630,7 +751,7 @@ html, body {
         align-items: center;
         text-align: center;
         padding: 20px;
-        gap: 20px;
+        gap: 15px;
     }
     .serviceImgs {
         width: 100%;
